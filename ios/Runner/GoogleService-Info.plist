@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>813870519087-bvl3ievt65g84vu4cv1vk7o9s0nudnst.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.813870519087-bvl3ievt65g84vu4cv1vk7o9s0nudnst</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDkZDE_U6mwzRYBlWxPxO6x4OPCpXZjIpM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>813870519087</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.11tatsumimn08.flutterFirstApp</string>
+	<key>PROJECT_ID</key>
+	<string>chokotto-memo-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chokotto-memo-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:813870519087:ios:1459fbcf683602140c87da</string>
+</dict>
+</plist>

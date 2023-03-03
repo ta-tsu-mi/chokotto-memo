@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "813870519087",
+    "project_id": "chokotto-memo-app",
+    "storage_bucket": "chokotto-memo-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813870519087:android:d7435fffd62a96c80c87da",
+        "android_client_info": {
+          "package_name": "com.example.flutter_first_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813870519087-1nlla697ugrig8c4l1refgpsfam7ln2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHHv5m4qZauQcWzm7dUUHcOeMtlB-kjAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813870519087-1nlla697ugrig8c4l1refgpsfam7ln2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

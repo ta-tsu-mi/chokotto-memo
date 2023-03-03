@@ -1,0 +1,167 @@
+[debug] [2023-03-03T07:11:01.483Z] ----------------------------------------------------------------------
+[debug] [2023-03-03T07:11:01.484Z] Command:       /usr/local/bin/node /opt/homebrew/bin/firebase init
+[debug] [2023-03-03T07:11:01.485Z] CLI Version:   11.24.0
+[debug] [2023-03-03T07:11:01.485Z] Platform:      darwin
+[debug] [2023-03-03T07:11:01.486Z] Node Version:  v16.18.1
+[debug] [2023-03-03T07:11:01.493Z] Time:          Fri Mar 03 2023 16:11:01 GMT+0900 (日本標準時)
+[debug] [2023-03-03T07:11:01.493Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-03T07:11:01.505Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-03T07:11:01.507Z] > authorizing via signed-in user (letombeaudecouperin5221@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/tatsumimasumi/StudioProjects/flutter_first_app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-03-03T07:11:30.153Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-03-03T07:11:30.836Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-03-03T07:11:30.840Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project chokotto-memo-app (chokotto-memo-app) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-03-03T07:11:32.688Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-03-03T07:11:32.688Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/chokotto-memo-app
+[debug] [2023-03-03T07:11:33.951Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/firebasedatabase.googleapis.com 200
+[debug] [2023-03-03T07:11:33.952Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/firebasedatabase.googleapis.com [omitted]
+[info] ✔  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-03-03T07:11:33.955Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/chokotto-memo-app/locations/-/instances/chokotto-memo-app-default-rtdb [none]
+[debug] [2023-03-03T07:11:34.560Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/chokotto-memo-app/locations/-/instances/chokotto-memo-app-default-rtdb 200
+[debug] [2023-03-03T07:11:34.561Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/chokotto-memo-app/locations/-/instances/chokotto-memo-app-default-rtdb {"name":"projects/813870519087/locations/asia-southeast1/instances/chokotto-memo-app-default-rtdb","project":"projects/813870519087","databaseUrl":"https://chokotto-memo-app-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] Skipping overwrite of Realtime Database Security Rules.
+[info] The security rules defined in database.rules.json will be published when you run firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-03-03T07:11:42.904Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/firestore.googleapis.com [none]
+[debug] [2023-03-03T07:11:42.904Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/firestore.googleapis.com x-goog-quota-user=projects/chokotto-memo-app
+[debug] [2023-03-03T07:11:44.138Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/firestore.googleapis.com 200
+[debug] [2023-03-03T07:11:44.138Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/firestore.googleapis.com [omitted]
+[debug] [2023-03-03T07:11:44.140Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/chokotto-memo-app/databases/(default) [none]
+[debug] [2023-03-03T07:11:44.446Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/chokotto-memo-app/databases/(default) 200
+[debug] [2023-03-03T07:11:44.447Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/chokotto-memo-app/databases/(default) {"name":"projects/chokotto-memo-app/databases/(default)","uid":"f02b5529-378a-4491-b324-e6b7fed8c74d","createTime":"2023-03-03T00:12:52.111165Z","updateTime":"2023-03-03T00:12:52.111165Z","locationId":"asia-northeast2","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","appEngineIntegrationMode":"DISABLED","keyPrefix":"u","etag":"ILOnmsOav/0CMNjlgr2/vv0C"}
+[debug] [2023-03-03T07:11:44.447Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-03-03T07:11:44.447Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-03T07:11:44.449Z] > authorizing via signed-in user (letombeaudecouperin5221@gmail.com)
+[debug] [2023-03-03T07:11:44.449Z] [iam] checking project chokotto-memo-app for permissions ["firebase.projects.get"]
+[debug] [2023-03-03T07:11:44.450Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chokotto-memo-app:testIamPermissions [none]
+[debug] [2023-03-03T07:11:44.451Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chokotto-memo-app:testIamPermissions x-goog-quota-user=projects/chokotto-memo-app
+[debug] [2023-03-03T07:11:44.451Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chokotto-memo-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-03T07:11:45.621Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chokotto-memo-app:testIamPermissions 200
+[debug] [2023-03-03T07:11:45.622Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chokotto-memo-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-03-03T07:11:58.268Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/chokotto-memo-app/releases pageSize=10&pageToken=
+[debug] [2023-03-03T07:11:59.565Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/chokotto-memo-app/releases 200
+[debug] [2023-03-03T07:11:59.566Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/chokotto-memo-app/releases {"releases":[{"name":"projects/chokotto-memo-app/releases/cloud.firestore","rulesetName":"projects/chokotto-memo-app/rulesets/9cf8e7ed-ce02-420f-a726-5f4cc9ed870f","createTime":"2023-03-03T00:13:00.770860Z","updateTime":"2023-03-03T00:13:00.770860Z"}]}
+[debug] [2023-03-03T07:11:59.566Z] Found ruleset: projects/chokotto-memo-app/rulesets/9cf8e7ed-ce02-420f-a726-5f4cc9ed870f
+[debug] [2023-03-03T07:11:59.567Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/chokotto-memo-app/rulesets/9cf8e7ed-ce02-420f-a726-5f4cc9ed870f [none]
+[debug] [2023-03-03T07:12:00.718Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/chokotto-memo-app/rulesets/9cf8e7ed-ce02-420f-a726-5f4cc9ed870f 200
+[debug] [2023-03-03T07:12:00.718Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/chokotto-memo-app/rulesets/9cf8e7ed-ce02-420f-a726-5f4cc9ed870f [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-03-03T07:12:11.916Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/chokotto-memo-app/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-03-03T07:12:11.919Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/chokotto-memo-app/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-03-03T07:12:12.263Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/chokotto-memo-app/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-03-03T07:12:12.267Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/chokotto-memo-app/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/chokotto-memo-app/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2023-03-03T07:12:12.269Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/chokotto-memo-app/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-03-03T07:12:12.270Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/chokotto-memo-app/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Functions Setup
+[debug] [2023-03-03T07:12:12.277Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-03T07:12:12.278Z] > authorizing via signed-in user (letombeaudecouperin5221@gmail.com)
+[debug] [2023-03-03T07:12:12.278Z] [iam] checking project chokotto-memo-app for permissions ["firebase.projects.get"]
+[debug] [2023-03-03T07:12:12.280Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chokotto-memo-app:testIamPermissions [none]
+[debug] [2023-03-03T07:12:12.280Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chokotto-memo-app:testIamPermissions x-goog-quota-user=projects/chokotto-memo-app
+[debug] [2023-03-03T07:12:12.280Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chokotto-memo-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-03T07:12:13.134Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chokotto-memo-app:testIamPermissions 200
+[debug] [2023-03-03T07:12:13.134Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chokotto-memo-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-03T07:12:13.136Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-03-03T07:12:13.136Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/chokotto-memo-app
+[debug] [2023-03-03T07:12:13.140Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-03-03T07:12:13.141Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/chokotto-memo-app
+[debug] [2023-03-03T07:12:14.339Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/runtimeconfig.googleapis.com 200
+[debug] [2023-03-03T07:12:14.340Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-03-03T07:12:14.529Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/cloudfunctions.googleapis.com 200
+[debug] [2023-03-03T07:12:14.530Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chokotto-memo-app/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] 
+Overwriting codebase default...
+
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/index.js 
+[info] ✔  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-03-03T07:17:15.847Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-03-03T07:17:16.395Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-03-03T07:17:16.396Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.17.2","browserURL":"https://www.gstatic.com/firebasejs/9.17.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.17.2/firebase.tgz"},"live":{"version":"9.17","browserURL":"https://www.gstatic.com/firebasejs/live/9.17/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.17/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.17.2/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.17.2/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.17.2/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.17.2/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.17.2/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.17.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.17.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.17.2/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.17.2/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.17.2/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/tatsumimasumi 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=483190850&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-03-03T07:17:39.712Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-03-03T07:17:39.713Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-03-03T07:17:40.243Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-03-03T07:17:40.243Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-03-03T07:17:40.283Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-03-03T07:17:40.777Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-03-03T07:17:40.784Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"ta-tsu-mi","id":126855230,"node_id":"U_kgDOB4-oPg","avatar_url":"https://avatars.githubusercontent.com/u/126855230?v=4","gravatar_id":"","url":"https://api.github.com/users/ta-tsu-mi","html_url":"https://github.com/ta-tsu-mi","followers_url":"https://api.github.com/users/ta-tsu-mi/followers","following_url":"https://api.github.com/users/ta-tsu-mi/following{/other_user}","gists_url":"https://api.github.com/users/ta-tsu-mi/gists{/gist_id}","starred_url":"https://api.github.com/users/ta-tsu-mi/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ta-tsu-mi/subscriptions","organizations_url":"https://api.github.com/users/ta-tsu-mi/orgs","repos_url":"https://api.github.com/users/ta-tsu-mi/repos","events_url":"https://api.github.com/users/ta-tsu-mi/events{/privacy}","received_events_url":"https://api.github.com/users/ta-tsu-mi/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":1,"public_gists":0,"followers":0,"following":0,"created_at":"2023-03-03T06:51:07Z","updated_at":"2023-03-03T06:51:07Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as ta-tsu-mi 
+[info] 
+[debug] [2023-03-03T07:24:00.352Z] >>> [apiv2][query] GET https://api.github.com/repos/pakoron/chokotto_memo/actions/secrets/public-key type=owner
+[debug] [2023-03-03T07:24:00.873Z] <<< [apiv2][status] GET https://api.github.com/repos/pakoron/chokotto_memo/actions/secrets/public-key 403
+[debug] [2023-03-03T07:24:00.873Z] <<< [apiv2][body] GET https://api.github.com/repos/pakoron/chokotto_memo/actions/secrets/public-key {"message":"Must have admin rights to Repository.","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] ⚠  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-03-03T07:24:44.568Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-03-03T07:24:45.110Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-03-03T07:24:45.131Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-03-03T07:24:47.328Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-03-03T07:24:47.753Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-03-03T07:24:47.754Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-03-03T07:25:17.418Z] >>> [apiv2][query] GET https://api.github.com/repos/ta-tsu-mi/chokotto-memo-app/actions/secrets/public-key type=owner
+[debug] [2023-03-03T07:25:17.820Z] <<< [apiv2][status] GET https://api.github.com/repos/ta-tsu-mi/chokotto-memo-app/actions/secrets/public-key 404
+[debug] [2023-03-03T07:25:17.821Z] <<< [apiv2][body] GET https://api.github.com/repos/ta-tsu-mi/chokotto-memo-app/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
